@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/eventCardView"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:id="@+id/eventCardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/eventCardTypeIcon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_baseline_sports_basketball_24"
+            app:tint="#5A958F"
+            />
+
+        <LinearLayout
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:id="@+id/eventCardName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event Long Name"
+                android:textStyle="bold"
+/>
+
+            <TextView
+                android:id="@+id/eventCardDate"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18/7/21 Sunday"/>
+
+            <TextView
+                android:id="@+id/eventCardTime"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="22:30"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="?android:attr/listDivider"
+            android:layout_marginStart="10dp"
+            />
+
+
+        <LinearLayout
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_baseline_near_me_24"
+                app:tint="#E57373" />
+
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_baseline_person_24"
+                app:tint="#7986CB"
+ />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_marginStart="5dp">
+
+            <TextView
+                android:id="@+id/eventCardDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.7km"/>
+
+            <TextView
+                android:id="@+id/eventCardParticipants"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/tertiary_text_light"
+                android:text="3/10"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
